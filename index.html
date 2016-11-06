@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+  </head>
+  <body style="color:white">
+  	<video playsinline loop poster="images/black.png" id="bgvid" >
+        <source src="media/Master.mp4" type="video/mp4">
+    </video>
+    <div id="content">
+    	<div class="menu animated fadeInRight">
+        	<i class="material-icons">menu</i>
+        </div>
+        <div class="button">
+        	<img id="button" src="images/play-button.png" alt="">
+            
+        </div>
+        <img id="clear" src="images/clear.png" style="margin-left: 96.7%; margin-top: 4%; position: absolute;">
+    </div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    <script>
+    	$(document).ready(function(e) {
+            var button = $('#button');
+			button.click(function(){
+				button.fadeOut();
+				$("#bgvid").trigger("play");
+			});
+            var button2 = $('#clear');
+            button2.click(function(){
+                button2.fadeOut();
+                location.href = "three.html";  
+            });
+				
+        });
+    </script>
+  </body>
+</html>

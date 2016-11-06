@@ -1,0 +1,187 @@
+/*!
+Styles for full screen background video demo
+*/
+/* =============================================================================
+  RESETS
+============================================================================= */
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+  HTML, BODY
+============================================================================= */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  line-height: 1.5;
+}
+
+/* =============================================================================
+  CONTENT
+============================================================================= */
+.content {
+  position: relative;
+  top: 30%;
+  z-index: 3;
+  margin: 0 auto;
+  max-width: 450px;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+}
+
+.content__heading {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 40px;
+  margin-top: -30px;
+  z-index: 3;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+.super__script {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  z-index: 3;
+}
+.special__character {
+  font: 200 70px/1.3 'Arizonia', Helvetica, sans-serif;
+  color: #ffffff;
+  z-index: 3;
+  /*text-shadow: 4px 4px 0px rgba(0,0,0,0.1); */
+}
+
+.content__teaser {
+  margin-top: -20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  z-index: 3;
+}
+
+.content__cta {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 48px;
+  color: #ff3c64;
+  font-size: 22px;
+  text-decoration: none;
+  border: solid 4px #ff3c64;
+  z-index: 3;
+}
+.content__cta2 {
+  position: fixed;
+  left: 45%;
+  top: 85%;
+  z-index: 3;
+  padding: 12px 48px;
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+  z-index: 3;
+}
+
+
+/* =============================================================================
+  VIDEO
+============================================================================= */
+.elementToFadeInAndOut {
+/*  -webkit-transition: all 3s ease-out;
+  -moz-transition: all 3s ease-out;
+  -ms-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+  transition: all 3s ease-out;*/
+
+  -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 3s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 3s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+/*.elementToFadeInAndOut:hover {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}*/
+
+@-moz-keyframes dropHeader {
+    0% {
+        opacity 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        opacity : 1;
+    }
+    100% {
+        opacity : 0;
+    }
+}
+@keyframes dropHeader {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.coverImage {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 2;
+  opacity: 0;
+
+}
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}

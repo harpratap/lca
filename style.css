@@ -1,0 +1,165 @@
+@charset "UTF-8";
+a:visited {color:#ffffff;} 
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+	background:url(images/black.png);
+    background-size: cover; 
+}
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+#content .button img {
+	position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 70px;
+   margin-top: -35px; /* Half the height */
+   margin-left: -35px;
+}
+
+#content{
+	
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+
+.menu{
+	float:right;
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	right:0;
+	background: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%) center center fixed;
+}
+
+.button{
+	width: 100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#content .menu .material-icons {
+	color: #FFFFFF;
+	font-size: 32px;
+	float: right;
+	margin-top: 13px;
+	margin-right: 11px;
+}
+#content .menu-text {
+	position: absolute;
+	right: 52px;
+	font-variant: small-caps;
+	top: 18px;
+}
+
+.news, .some_text, .contact{
+	font-size:10px;
+	transform: rotate(90deg);
+	text-transform: uppercase;
+	transform-origin: left top 0;
+}
+
+.news{
+	position: absolute;
+	top: 54px;
+	right: -8px;
+}
+
+.some_text{
+	position: absolute;
+	top: 104px;
+	right: -35px;
+}
+
+.contact{
+	position: absolute;
+	top: 180px;
+	right:-27px;
+}
+
+.fa-times{
+	position:absolute;
+	top:50px;
+	right:15px;
+}
+
+.fa-twitter{
+	position:absolute;
+	top:270px;
+	right:20px;
+}
+
+.fa-pinterest{
+	position:absolute;
+	top:300px;
+	right:20px;
+}
+
+.text h1{
+	font-weight: normal;
+	font-size: 26px;
+	color: white;
+}
+.text p{
+	color: white;
+
+}
+.text{
+	width: 31%;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+.text button{
+	background:    rgba(0,0,0,0.1);
+	border:        1px solid rgba(255,255,255,0.5);
+	color:         #fff;
+	display:       inline-block;
+	padding:       8px 20px;
+	text-align:    center;
+	text-shadow:   none;
+	transition: all 0.1s ease-in-out 0s;
+	text-transform: uppercase;
+	position: relative;
+	top: 15%;
+	left: 5%;
+	animation-delay: 4s;
+}
+.text button:hover{
+	border: 1px solid #fff;
+}
+
+.btn2{
+	margin-left: 12%;
+}

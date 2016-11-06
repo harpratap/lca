@@ -1,0 +1,148 @@
+.background img{
+	position: fixed;
+	width: 30%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.left{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 100%;
+	padding-right: 4%;
+
+}
+
+.left h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	padding-bottom: 8%;
+	padding-top: 10%;
+	animation-delay: 0.3s;
+}
+.left p{
+	padding-top: 0%;
+    padding-left: 10%;
+    padding-right: 9%;
+    padding-bottom: 3%;
+    font-weight: lighter;
+    font-size: 1.26rem;
+    animation-delay: 0.6s;
+}
+.links{
+	animation-delay: 1s;
+
+}
+.links a{
+	padding-top: 0%;
+    padding-left: 10%;
+    padding-right: 9%;
+    padding-bottom: 3%;
+	background:    #fff;
+	color:         #000;
+	display:       block;
+	font-size: 	   13px;
+	text-align:    center;
+	text-decoration:none;
+}
+.links a:hover{
+	background:    #000;
+	color:         #fff;
+}
+
+.right{
+
+	width: 73%;
+	height: 100%;
+	position: absolute;
+	float: right;
+	top: 0;
+	right: 0;
+	z-index: -2;
+}
+#rig {
+    max-width:100%;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    animation-delay: 2s;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:1%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 13px 2px rgba(89,89,89,0.63);
+    padding:0;
+}
+
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.02);
+    filter: grayscale(100%) blur(1px);
+    box-shadow: 0px 0px 62px 2px rgba(89,89,89,0.55);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: /*#3DC0F1*/ url("../images/add.png") no-repeat center 50%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:23%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}

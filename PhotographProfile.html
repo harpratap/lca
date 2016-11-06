@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Photographs</title>
+	<style>
+		.background img{
+			position: fixed;
+			width: 100%;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+		.right img{
+			position: fixed;
+			width: 100%;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+		.left{
+			width: 27%;
+			height: 100%;
+			position: fixed;
+		}
+
+		.left h1{
+			margin: 1px auto;
+			padding-top: 20%;
+			text-align: center;
+		}
+		.left p{
+			margin: 1px auto;
+		    font-size: 1.5rem;
+		    padding-top: 20%;
+		    text-align: center;
+		}
+		.left img{
+	        margin: 1px auto;
+		    width: 20rem;
+		    padding-top: 20%;
+		    left: 21%;
+		    top: 13rem;
+		    position: relative;
+		}
+
+		.toolti img{
+			z-index: 3;
+			position: fixed;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="background">
+		<img class="animated fadeInLeft" src="images/profile_background_left.png" alt="">
+	</div>
+	<div class="toolti">
+		<img src="images/menu.png" alt="" style="
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+">
+		<img src="images/up.png" alt="" style="
+    bottom: 8rem;
+    right: 2rem;
+    width: 2rem;
+">
+		<img src="images/down.png" alt="" style="
+    bottom: 5rem;
+    right: 2rem;
+    width: 2rem;
+">
+		<img src="images/cancel.png" alt="" style="
+    bottom: 13rem;
+    right: 2rem;
+    width: 2rem;
+">
+	</div>
+	<div class="left">
+		<h1 class="animated fadeInDown ">JACK</h1>
+		<p class="animated fadeInDown">
+			«  Mon travail ?
+Arrêter le temps.  »
+		</p>
+		<img class="animated fadeInUp" src="images/sign.png" alt="">
+	</div>
+	<div class="right">
+		<img class=" animated fadeInRight" src="images/photographer_profile.png" alt="">
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+	
+</body>
+</html>

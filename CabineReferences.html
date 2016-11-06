@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cabines</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        .news, .some_text, .contact, .fa-twitter, .fa-facebook, .fa-pinterest{
+            color: white;
+        }
+        .fa-facebook{
+			position:absolute;
+			top:33%;
+			right:1.6%;
+			z-index:40;
+		}
+    </style>
+</head>
+<body>
+  	<video playsinline loop poster="images/carbine_video_placeholder.png" id="bgvid" >
+        <source src="media/Master.mp4" type="video/mp4">
+    </video>
+    <div id="content">
+    	<div class="menu animated fadeInRight">
+            <p class="menu-text"><a href="menu.html"> MENU</a> </p><i class="material-icons">menu</i>
+            <div class="links">
+            	<img id="clear" src="images/clear.png" style="right: 2.7%; top: 6%; position: fixed;">
+                <p class="news">News</p>
+                <p class="some_text">Some text</p>
+                <p class="contact">contact</p>
+                <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+                <i class="fa fa-pinterest fa-1x" aria-hidden="true"></i>
+            </div>
+        <div class="button animated zoomIn">
+        	<img id="button" src="images/play-button.png" alt="">
+            
+        </div>
+        <div class="text animated fadeInDown">
+        	<h1>Nos cabines photos</h1>
+        	<p>Offrez une animation originale et ludique à vos invités : <b>La Black Box</b> Avec ou sans vidéo, cette photo cabine est totalement personnalisable et assure un souvenir inoubliable ! Livrée clé en main et estampillée qualité Libre Comme l’Art, elle remporte toujours un franc succès !</p>
+        	<div class="btn">
+        		<button class="animated fadeInDown">Prestations</button>
+        		<button class="btn2 animated fadeInDown">Références</button>
+        	</div>
+        </div>
+    </div>
+    </div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+    <script>
+    	$(document).ready(function(e) {
+            var button = $('#button');
+			button.click(function(){
+				button.fadeOut();
+				$("#bgvid").trigger("play");
+			});
+            var button2 = $('#clear');
+            button2.click(function(){
+                button2.fadeOut();
+                location.href = "three.html";  
+            });
+				
+        });
+    </script>
+    
+</body>
+</html>

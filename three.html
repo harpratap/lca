@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="style3.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <style>
+      .fadeLeft{
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 15;
+        display: none;
+      }
+      .newsdiv{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        float: right;
+        z-index: 15;
+        width: 50%;
+        height: 100vw;
+        background: white;
+        display: none;
+      }
+
+      .newsdiv .toptext h1{
+        font-size: 1vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0.3vw;
+        left: 2vw;
+      }
+      .newsdiv .toptext p{
+        font-size: 1vw;
+        position: absolute;
+        top: 3vw;
+        left: 2vw;
+        width: 25vw;
+        
+      }
+      .newsdiv .toptext input{
+        font-size: 1vw;
+        position: absolute;
+        top: 7vw;
+        left: 2vw;
+        padding: 1rem 18rem 1rem 1rem;
+        border: 1px solid black;
+        
+      }
+      .newsdiv .toptext button{
+        font-size: 0.8vw;
+        font-weight: bold;
+        position: absolute;
+        top: 7.5vw;
+        left: 27vw;
+        background: #6d6d6d;
+        color: white;
+        border: 0px;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+      }
+
+      .newsdiv .content{
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        top: 11vw;
+      }
+      .newsdiv .content .row {
+          padding-top: 1vw;
+      }
+      .newsdiv .content .row .col-md-6 img{
+        width: 24vw;
+        padding-left: 1vw;
+      }
+
+      .newsdiv .content .row .col-md-6 h3{
+        font-size: 1.6vw;
+        text-transform: uppercase;
+        padding: 1vw;
+        background: url(images/news/h3.png) no-repeat;
+        color: white;
+      }
+      .newsdiv .content .row .col-md-6 h4{
+        font-size: 1vw;
+        text-transform: uppercase;
+      }
+      .newsdiv .content .row .col-md-6 p{
+        font-size: 1vw;
+        width: 17vw;
+      }
+    </style>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    
+  <script >
+
+  </script>
+  <!-- Include all compiled plugins (below), or include individual files as needed --> 
+  <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+
+  	<div class="fadeLeft animated" id="fadediv">
+      
+    </div>
+    <div class="newsdiv animated" id="newsdiv">
+      <p href="" onclick="hideNews()"><img src="images/cancel.png" style="
+      filter: invert(100%);
+      position: relative;
+      top: 1vw;
+      right: -47.5vw;
+      width: 1.5vw;
+      " alt=""></p>
+      <div class="toptext">
+        <h1>Restons en contact !</h1>
+        <p>Suivez l'actualité et Les Événements Promotionnels de Libre Comme l'Art en vous abonnant à la newsletter.</p>
+        <input type="text" placeholder="Email">
+        <button>Envoyer</button>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/news/1.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <h3>juillet 2016</h3>
+            <h4>Campagne d'affichage Zeina</h4>
+            <p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et dans le SGC tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/news/1.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <h3>juillet 2016</h3>
+            <h4>Campagne d'affichage Zeina</h4>
+            <p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et dans le SGC tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/news/1.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <h3>juillet 2016</h3>
+            <h4>Campagne d'affichage Zeina</h4>
+            <p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et dans le SGC tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/news/1.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <h3>juillet 2016</h3>
+            <h4>Campagne d'affichage Zeina</h4>
+            <p>Dum apud Persas, ut supra narravimus, perfidia regis motus agitat insperatos, et dans le SGC tractibus bella rediviva consurgunt, anno sexto decimo et eo diutius </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  	<div class="left">
+    	<div class="menu animated fadeInRight">
+   	  		<p class="menu-text"><a href="menu.html"> MENU</a> </p><i class="material-icons">menu</i>
+            <div class="links">
+            	<p class="news" onclick="showNews()">News</p>
+                <p class="some_text">Some text</p>
+                <p class="contact">contact</p>
+                <i class="fa fa-facebook fa-1x" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+                <i class="fa fa-pinterest fa-1x" aria-hidden="true"></i>
+            </div>
+    	</div>
+        <ol class="carousel-indicators">
+   		    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+   		    <li data-target="#carousel1" data-slide-to="1"></li>
+	    </ol>
+        
+        <div class="content ">
+        	<div class="dat1 animated fadeInLeft">
+            	<h1>l’agence</h1>
+                <p>
+Créée il y a plus de 15 ans par Michaël Guez. 
+L’agence est reconnue pour son savoir-faire et sa ligne artistique qui allie élégance et style contemporain. 
+Toujours à l’écoute de sa clientèle, l’agence a su s’imposer peu à peu comme une référence dans le segment du mariage.</p>
+            </div>
+        	<div class="dat2 animated fadeInLeft">
+            	<h1>la production</h1>
+                <p>De notre première rencontre à la livraison, en passant par la prise de vue et la post-production, nos équipes assurent un suivi personnalisé pour vous offrir un service performant. Chaque étape de la production est validée par Michael Guez pour en assurer la qualité et la cohérence artistique.</p>
+            </div>
+        	<div class="dat3 animated fadeInLeft">
+            	<h1>le show-room</h1>
+                <p>Facile d’accès, l’agence est située au cœur de Paris dans une petite cour pavée. Nous serons ravis de vous accueillir dans le show-room pour vous faire découvrir notre univers et discuter ensemble de l’histoire que vous souhaitez transmettre au travers de votre reportage photographique.</p>
+            </div>
+        	<div class="dat4 animated fadeInLeft">
+            	<h1>le studio</h1>
+                <p>L’agence dispose de 2 étages dont l’un est entièrement dédié à la prise de vue. Dans ce studio entièrement équipé de matériel récent et professionnel, nous réalisons vos portraits de famille, enfants, bébés en vue d’un événement particulier... ou juste pour le plaisir !</p>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+	  <div id="carousel1" class="carousel slide animated fadeInDownBig" data-ride="carousel">
+   		  
+   		  <div class="carousel-inner" role="listbox">
+   		    <div class="item active"><img src="images/3_1.png" alt="First slide image" class="center-block">
+	        </div>
+   		    <div class="item"><img src="images/3_2.png" alt="Second slide image" class="center-block">
+	        </div>
+	    </div>
+   		  
+        </div>
+    </div>
+    <script>
+
+      var news = document.getElementById('newsdiv');
+      var fade = document.getElementById('fadediv');
+       function showNews(){
+          news.className = " newsdiv animated slideInRight";
+          fade.className = " fadeLeft animated fadeIn";
+          news.style.display = "block";
+          fade.style.display = "block";
+       }
+       function hideNews(){
+          news.className = "newsdiv animated fadeOutRight";
+          fade.className = " fadeLeft animated fadeOut";
+          setTimeout(function(){
+            news.style.display = "none";
+          fade.style.display = "none";
+              //do what you need here
+          }, 700);
+          
+       }
+    </script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	
+  </body>
+</html>

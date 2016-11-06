@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Screen Background Video</title>
+  <meta name="description" content="Librecommel'Art">
+  <meta name="author" description="Harpratap">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<img src="media/landingpage.png" class="elementToFadeInAndOut coverImage">
+<div class="content">
+  <h1 class="super__script">AGENCE PHOTOS</h1>
+  <h1 class="content__heading">LIBRECOMMEL'<span class="special__character">A</span>RT...</h1>
+  <p class="content__teaser"><i>" Prendre une photo, c'est inscrire une emotion dans le temps.<br>En un cliche, il faut savoir raconter une histoire et transmettre I'nvisible. "<i></p>
+  <p class="content__teaser" style="margin-top: 15px; padding-bottom: 10px;"> <b> Michael Guez, </b> Fondateur </p> 
+</div><!-- /content -->
+<a href="index.html" class="content__cta2">Enter<br><i class="fa fa-angle-down" aria-hidden="true" style="margin-left: 40%;"></i></a>
+
+<video id="my-video" class="video" loop>
+  <source src="media/Master.mp4" type="video/mp4">
+  <source src="media/Master.ogv" type="video/ogg">
+  <source src="media/Master.webm" type="video/webm">
+</video><!-- /video -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="js/jquery-1.11.2.min.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed --> 
+  <script src="js/bootstrap.js"></script>
+<script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+      video.play();
+    
+  });
+})();
+</script>
+
+</body>
+</html>
